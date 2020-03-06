@@ -126,3 +126,47 @@ $color_bg: #ffffff
 
   .menu__hamburger:focus + ul
    display: block
+
+    //  WELCOME
+
+.welcome
+  background: url("../images/welcome.jpg") center center no-repeat
+  background-size: cover
+  height: 100vh
+  overflow: hidden
+  transition: filter 0.3s ease
+
+.welcome__text
+  position: absolute
+  z-index: 10
+  color: $color_bg
+  font-size: 38px
+  width: 100%
+  text-align: center
+  top: 50%
+  transform: translateY(-50%)
+  background: rgba(0, 0, 0, 0.5)
+  line-height: 2em
+  animation: text 12s infinite both
+
+.welcome__text:nth-of-type(2)
+  animation-delay: 4s
+
+.welcome__text:nth-of-type(3)
+  animation-delay: 8s
+
+@keyframes text
+  0%
+   opacity: 0
+  5%
+   opacity: 0
+  8%
+   opacity: 1
+  25%
+   opacity: 1
+  28%
+   opacity: 0
+  33.33%
+   opacity: 0
+  100%
+   opacity: 0
