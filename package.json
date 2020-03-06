@@ -1,11 +1,15 @@
 {
   "name": "msproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "My webpack project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./sass/styles.sass ./css/styles.css"
   },
   "author": "Paweł Kawalec",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
 }
