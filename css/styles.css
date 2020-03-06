@@ -222,4 +222,67 @@
   text-align: justify;
 }
 
+#ms_project .module__img {
+  background-image: url(../images/MSProject.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#project_management .module__img {
+  background-image: url(../images/PM.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#ms_excel .module__img {
+  background-image: url(../images/MSExcel.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.module__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.box {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 18em;
+  padding: 1em 0.5em;
+  margin: 1em;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.box__header {
+  min-height: 20%;
+  max-height: 20%;
+}
+
+.box__info {
+  font-size: 14px;
+  min-height: 60%;
+  max-height: 60%;
+  margin: 20px 0;
+}
+
+.box__link {
+  color: #0080ff;
+  font-weight: bold;
+  min-height: 20%;
+  max-height: 20%;
+  margin: 20px 0;
+}
+
+.box:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  transform: rotate(5deg);
+}
+
 /*# sourceMappingURL=styles.css.map */
