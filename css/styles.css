@@ -140,7 +140,7 @@
   }
 }
 .welcome {
-  background: url("../images/welcome.jpg") center center no-repeat;
+  background: url("../images/Puzle.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -191,6 +191,35 @@
   100% {
     opacity: 0;
   }
+}
+.module {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 5em;
+  z-index: 10;
+  min-height: 100vh;
+}
+
+.module__desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.module__img {
+  min-width: 250px;
+  min-height: 250px;
+}
+
+.module__header {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.module__info {
+  font-size: 22px;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=styles.css.map */
