@@ -1,0 +1,58 @@
+$font: "Roboto", Arial, Helvetica, sans-serif
+$color_1: #2c3e50
+$color_2: #ecf0f1
+$color_3: #e74c3c
+$color_4: #3498db
+$color_5: #2980b9
+$color_h1: #f15225
+$color_bg: #ffffff
+
+*
+  margin: 0
+  padding: 0
+  font-size: 16px
+  box-sizing: border-box
+  font-family: $font
+  scroll-behavior: smooth
+
+.header
+  display: flex
+  justify-content: space-around
+  align-items: center
+  background: $color_bg
+  width: 100%
+  position: fixed
+  z-index: 100
+  padding: 20px 0
+
+.header__logo
+ justify-content: center
+
+.header__logo-image
+ height: 3em
+
+.menu
+  display: flex
+  flex-direction: row-reverse
+
+.menu__list
+  display: flex
+  flex-direction: row
+  height: 100%
+
+.menu__item
+  padding: 0
+  margin: 0 20px
+  list-style-type: none
+
+.menu__link
+  display: block
+  width: 100%
+  line-height: 2em
+  text-decoration: none
+  font-size: 1.3em
+  font-weight: 900
+  color: $color_5
+
+.menu__link:hover
+  color: $color_1
