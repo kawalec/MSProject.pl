@@ -14,19 +14,79 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <a href="#"><img src="images/Logo.jpg" alt="Logotyp"/></a>
+        <a class="header__logo-link" href="#"
+          ><img class="header__logo-image" src="images/Logo.jpg" alt="Logotyp"
+        /></a>
       </div>
-      <nav>
-        <button class="header__hamburger"></button>
-        <ul class="header__menu">
-          <li><a href="#ms_project">MS Project</a></li>
-          <li><a href="#project_management">Zarządzanie projektami</a></li>
-          <li><a href="#ms_excel">MS Excel</a></li>
-          <li><a href="#consulting">Consulting</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-          <li><a href="#about">O nas</a></li>
+      <nav class="menu">
+        <button class="menu__hamburger"></button>
+        <ul class="menu-list">
+          <li class="menu__item">
+            <a class="menu__link" href="#ms_project">MS Project</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#project_management"
+              >Zarządzanie projektami</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#ms_excel">MS Excel</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#consulting">Consulting</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contact">Kontakt</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">O nas</a>
+          </li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="welcome"></section>
+      <section id="ms_project" class="module">
+        <div class="module__desc">
+          <div class="module__img"></div>
+          <article class="module__article">
+            <h1 class="module__header">MS Project</h1>
+            <p class="module__info"></p>
+          </article>
+        </div>
+        <div class="module__boxes">
+          <a href="#" class="box">
+            <h4 class="box__header">MS Project - poziom podstawowy</h4>
+            <p class="box__info"></p>
+            <p class="box__link">Pobierz programy szkolenia.</p>
+          </a>
+          <a href="#" class="box">
+            <h4 class="box__header">MS Project - poziom zaawansowany</h4>
+            <p class="box__info"></p>
+            <p class="box__link">Pobierz programy szkolenia.</p>
+          </a>
+          <a href="#" class="box">
+            <h4 class="box__header">MS Project< - harmonogramowanie</h4>
+            <p class="box__info"></p>
+            <p class="box__link">Pobierz programy szkolenia.</p>
+          </a>
+          <a href="#" class="box">
+            <h4 class="box__header">MS Project< - koszty (EVM)</h4>
+            <p class="box__info"></p>
+            <p class="box__link">Pobierz programy szkolenia.</p>
+          </a>
+          <a href="#" class="box">
+            <h4 class="box__header">Project Libre</h4>
+            <p class="box__info"></p>
+            <p class="box__link">Pobierz programy szkolenia.</p>
+          </a>
+          <a href="#" class="box">
+            <h4 class="box__header">Gantt Project</h4>
+            <p class="box__info"></p>
+            <p class="box__link">Pobierz programy szkolenia.</p>
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
