@@ -360,3 +360,107 @@ $color_link: #0080ff
 
     &__info-two
       display: none
+
+
+  //  ABOUT US
+
+.about
+  background: url("../images/desktop_r.jpg") center center no-repeat
+  background-size: cover
+  overflow: hidden
+  z-index: 50
+  display: grid
+  grid-template-columns: repeat(10, 1fr)
+  grid-template-rows: repeat(10, 1fr)
+
+  &__header
+    font-size: 32px
+    grid-column: 2 / span 4
+    grid-row: 1 / span 1
+    align-self: end
+
+  &__info
+    text-align: justify
+    font-size: 20px
+
+    &--one
+      grid-column: 2 / span 5
+      grid-row: 3 / span 1
+
+    &--two
+      grid-column: 2 / span 5
+      grid-row: 5 / span 1
+
+    &--three
+      grid-column: 2 / span 5
+      grid-row: 7 / span 1
+
+    &--four
+      grid-column: 2 / span 5
+      grid-row: 9 / span 1
+
+@media only screen and (max-width: 1360px)
+  .about
+    grid-template-columns: repeat(10, 1fr)
+    grid-template-rows: repeat(13, 1fr)
+
+    &__info--one
+      grid-column: 2 / span 5
+      grid-row: 3 / span 2
+
+    &__info--two
+      grid-column: 2 / span 5
+      grid-row: 6 / span 2
+
+    &__info--three
+      grid-column: 2 / span 5
+      grid-row: 9 / span 2
+
+    &__info--four
+      grid-column: 2 / span 5
+      grid-row: 12 / span 2
+
+@media only screen and (max-width: 768px)
+  .about
+    grid-template-columns: repeat(10, 1fr)
+    grid-template-rows: repeat(6, 1fr)
+
+    &__header
+      align-self: center
+
+    &__info--one
+      grid-column: 2 / span 6
+      grid-row: 2 / span 2
+
+    &__info--two
+      display: none
+
+    &__info--three
+      display: none
+
+    &__info--four
+      grid-column: 2 / span 6
+      grid-row: 5 / span 2
+
+@media only screen and (max-width: 480px)
+  .about
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: repeat(3, 1fr)
+
+    &__header
+      grid-column: 2 / span 4
+      grid-row: 1 / span 1
+
+    &__info--one
+      display: none
+
+    &__info--two
+      display: none
+
+    &__info-three
+      display: none
+
+    &__info--four
+      grid-column: 2 / span 4
+      grid-row: 2 / span 1
+      text-align: left
