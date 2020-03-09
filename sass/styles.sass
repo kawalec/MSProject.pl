@@ -28,71 +28,71 @@ $color_link: #0080ff
   z-index: 100
   padding: 20px 0
 
-.header__logo
- justify-content: center
+  &__logo
+    justify-content: center
 
-.header__logo-image
- height: 3em
+    &-image
+      height: 3em
 
 .menu
   display: flex
   flex-direction: row-reverse
 
-.menu__list
-  display: flex
-  flex-direction: row
-  height: 100%
+  &__list
+    display: flex
+    flex-direction: row
+    height: 100%
 
-.menu__item
-  padding: 0
-  margin: 0 20px
-  list-style-type: none
+  &__item
+    padding: 0
+    margin: 0 20px
+    list-style-type: none
 
-.menu__link
-  display: block
-  width: 100%
-  line-height: 2em
-  text-decoration: none
-  font-size: 1.3em
-  font-weight: 900
-  color: $color_5
+  &__link
+    display: block
+    width: 100%
+    line-height: 2em
+    text-decoration: none
+    font-size: 1.3em
+    font-weight: 900
+    color: $color_5
 
-.menu__link:hover
-  color: $color_1
+    &:hover
+      color: $color_1
 
-.menu__hamburger
-  display: none
-  outline: none
-  cursor: pointer
-  margin-right: 20px
-  width: 40px
-  height: 35px
-  border: 0
-  border-top: 5px solid $color_1
-  position: relative
-  background: transparent
-  transition: 0.3s transform ease
+  &__hamburger
+    display: none
+    outline: none
+    cursor: pointer
+    margin-right: 20px
+    width: 40px
+    height: 35px
+    border: 0
+    border-top: 5px solid $color_1
+    position: relative
+    background: transparent
+    transition: 0.3s transform ease
 
-.menu__hamburger::before,
-.menu__hamburger::after
-  content: ""
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  border-top: 5px solid $color_1
-  transform: translateY(10px)
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      border-top: 5px solid $color_1
+      transform: translateY(10px)
 
-.menu__hamburger::after
-  transform: translateY(25px)
-  transition: 0.1s transform ease
+    &::after
+      transform: translateY(25px)
+      transition: 0.1s transform ease
 
-.menu__hamburger:focus
-  transform: rotate(45deg) translateY(5px)
-  border: none
+    &:focus
+      transform: rotate(45deg) translateY(5px)
+      border: none
 
-.menu__hamburger:focus::after
-  transform: rotate(-90deg) translateX(-10px)
+    &:focus::after
+      transform: rotate(-90deg) translateX(-10px)
 
 @media only screen and (max-width: 1000px)
   .menu__link
@@ -103,30 +103,30 @@ $color_link: #0080ff
     font-size: 0.8em
 
 @media only screen and (max-width: 650px)
-  .menu__hamburger
-    display: block
-
   .header__logo
-   flex-grow: 1
+    flex-grow: 1
 
   .menu
-   flex-grow: 4
+    flex-grow: 4
+  
+    &__list
+      flex-direction: column
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 70%
 
-  .menu__list
-   flex-direction: column
-   display: flex
-   justify-content: center
-   align-items: center
-   width: 70%
+    &__link
+      font-size: 1em
 
-  menu__link
-   font-size: 1em
+    &__hamburger
+      display: block
 
-  .menu__hamburger + ul
-   display: none
+      & + ul
+        display: none
 
-  .menu__hamburger:focus + ul
-   display: block
+      &:focus + ul
+        display: block
 
     //  WELCOME
 
@@ -137,24 +137,24 @@ $color_link: #0080ff
   overflow: hidden
   transition: filter 0.3s ease
 
-.welcome__text
-  position: absolute
-  z-index: 10
-  color: $color_bg
-  font-size: 38px
-  width: 100%
-  text-align: center
-  top: 50%
-  transform: translateY(-50%)
-  background: rgba(0, 0, 0, 0.5)
-  line-height: 2em
-  animation: text 12s infinite both
+  &__text
+    position: absolute
+    z-index: 10
+    color: $color_bg
+    font-size: 38px
+    width: 100%
+    text-align: center
+    top: 50%
+    transform: translateY(-50%)
+    background: rgba(0, 0, 0, 0.5)
+    line-height: 2em
+    animation: text 12s infinite both
 
-.welcome__text:nth-of-type(2)
-  animation-delay: 4s
+    &:nth-of-type(2)
+      animation-delay: 4s
 
-.welcome__text:nth-of-type(3)
-  animation-delay: 8s
+    &:nth-of-type(3)
+      animation-delay: 8s
 
 @keyframes text
   0%
@@ -182,45 +182,42 @@ $color_link: #0080ff
   z-index: 10
   min-height: 100vh
 
-.module__desc
-  display: flex
-  flex-direction: row
-  align-items: center
-  margin-bottom: 20px
+  &__desc
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 20px
 
-.module__img
-  min-width: 250px
-  min-height: 250px
+  &__header
+    font-size: 32px
+    margin-bottom: 15px
 
-.module__header
-  font-size: 32px
-  margin-bottom: 15px
+  &__info
+    font-size: 22px
+    text-align: justify
 
-.module__info
-  font-size: 22px
-  text-align: justify
+  &__img
+    min-width: 250px
+    min-height: 250px
+    background-position: center center
+    background-repeat: no-repeat
 
-#ms_project .module__img 
-  background-image: url(../images/MSProject.png)
-  background-position: center center
-  background-repeat: no-repeat
+    &--ms-project
+      background-image: url(../images/MSProject.png)
 
-#project_management .module__img
-  background-image: url(../images/PM.png)
-  background-position: center center
-  background-repeat: no-repeat
+    &--project-management
+      background-image: url(../images/PM.png)
 
-#ms_excel .module__img
-  background-image: url(../images/MSExcel.png)
-  background-position: center center
-  background-repeat: no-repeat
+    &--ms-excel
+      background-image: url(../images/MSExcel.png)
 
-.module__boxes
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-  max-width: 1250px
-  margin: 0 auto
+
+  &__boxes
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    max-width: 1250px
+    margin: 0 auto
 
 .box
   text-decoration: none
@@ -234,20 +231,100 @@ $color_link: #0080ff
   border-radius: 10px
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2)
 
-.box__header
-  flex-grow: 1
+  &__header
+    flex-grow: 1
 
-.box__info
-  font-size: 14px
-  flex-grow: 3
-  margin: 20px 0
+  &__info
+    font-size: 14px
+    flex-grow: 3
+    margin: 20px 0
 
-.box__link
-  color: $color_link
-  font-weight: bold
-  flex-grow: 1
-  margin: 0 0 10px 0
+  &__link
+    color: $color_link
+    font-weight: bold
+    flex-grow: 1
+    margin: 0 0 10px 0
 
-.box:hover
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2)
-  transform: rotate(5deg)
+  &:hover
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2)
+    transform: rotate(5deg)
+
+
+      //  CONSULTING
+.consulting
+  background: url("../images/desktop_l.jpg") center center no-repeat
+  background-size: cover
+  min-height: 100vh
+  overflow: hidden
+  z-index: 25
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-template-rows: repeat(12, 1fr)
+
+  &__header
+    font-size: 32px
+    grid-column: 5 / span 1
+    grid-row: 5 / span 1
+
+  &__info
+    text-align: justify
+    font-size: 20px
+
+    &-one
+      grid-column: 5 / span 8
+      grid-row: 7 / span 2
+
+    &-two
+      grid-column: 5 / span 8
+      grid-row: 9 / span 2
+
+@media only screen and (max-width: 1360px)
+  .consulting
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: repeat(6, 1fr)
+
+    &__header
+      grid-column: 5 / span 1
+      grid-row: 2 / span 1
+
+    &__info-one
+      grid-column: 2 / span 6
+      grid-row: 3 / span 2
+
+    &__info-two
+      grid-column: 2 / span 6
+      grid-row: 5 / span 2
+
+@media only screen and (max-width: 768px)
+  .consulting
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: repeat(6, 1fr)
+
+    &__header
+      grid-column: 5 / span 1
+      grid-row: 2 / span 1
+
+    &__info-one
+      grid-column: 1 / span 6
+      grid-row: 3 / span 2
+
+    &__info-two
+      grid-column: 1 / span 6
+      grid-row: 5 / span 2
+
+@media only screen and (max-width: 480px)
+  .consulting
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(5, 1fr)
+
+    &__header
+      grid-column: 3 / span 1
+      grid-row: 1 / span 1
+      align-self: center
+
+    &__info-one
+      grid-column: 1 / span 3
+      grid-row: 2 / span 4
+
+    &__info-two
+      display: none
