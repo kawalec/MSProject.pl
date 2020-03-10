@@ -1,7 +1,7 @@
 window.addEventListener(
   "scroll",
   () => {
-    menuHeight();
+    menuHeight(), greyWelcome();
   },
   false
 );
@@ -16,5 +16,14 @@ const menuHeight = () => {
     document.querySelector(".header__logo-image").style.height = "2em";
     document.querySelector("header").style.padding = "0";
     document.querySelector("header").style.transition = "all .2s linear";
+  }
+};
+
+const greyWelcome = () => {
+  const headHeight = document.querySelector(".welcome").getBoundingClientRect();
+  if (headHeight.y < -100) {
+    document.querySelector(".welcome").style.filter = "grayscale(80%)";
+  } else {
+    document.querySelector(".welcome").style.filter = "grayscale(0%)";
   }
 };
