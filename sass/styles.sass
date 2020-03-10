@@ -571,3 +571,39 @@ $color_link: #0080ff
 @media only screen and (max-width: 400px)
   .contact
     margin: 0
+
+  // FOOTER
+
+.footer
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  margin-bottom: 20px
+  // max-height: 200px
+
+  &__info-header, &__company-header
+    padding: 1em 0
+
+  &__info, &__company
+    width: 30%
+
+  &__info-line
+    font-size: 20px
+
+.opc_add
+  opacity: 0
+  transition: all 1s ease
+
+.opc_del
+  opacity: 1
+  transition: all 1s ease
+
+@media only screen and (max-width: 800px)
+  .footer
+    flex-direction: column
+    align-items: center
+    // max-height: 400px
+
+    &__info, &__company
+      width: 80%
+
