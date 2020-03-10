@@ -266,24 +266,36 @@
         </p>
       </section>
 
-      <div id="contact">
-        <div class="postcard">
-          <div class="container">
-            <input id="title" type="text" placeholder="Tytuł wiadomości" />
-            <textarea id="body" placeholder="Treść wiadomości"></textarea>
-            <!-- <img class="stamp" src="images/stamp.png" alt="Logotyp" /> -->
-            <a class="foto" href="http:kawalec.eu" target="_blank">
-              <img src="./images/PK.jpeg" alt="Paweł Kawalec" />
+      <section id="contact" class="contact">
+        <div class="contact__container">
+          <div class="postcard">
+            <input
+              class="postcard__title"
+              id="title"
+              type="text"
+              placeholder="Tytuł wiadomości"
+            />
+            <textarea
+              class="postcard__body"
+              id="body"
+              placeholder="Treść wiadomości"
+            ></textarea>
+            <a class="postcard__link" href="http:kawalec.eu" target="_blank">
+              <img
+                class="postcard__foto"
+                src="./images/PK.jpeg"
+                alt="Paweł Kawalec"
+              />
             </a>
-            <div class="info">
-              <p>celawaK łewaP</p>
-              <p>lp.tcejorpsm@oruib :liam-e</p>
-              <p>515-905-615 (84+) :let</p>
+            <div class="postcard__info">
+              <p class="postcard__info-line">celawaK łewaP</p>
+              <p class="postcard__info-line">lp.tcejorpsm@oruib :liam-e</p>
+              <p class="postcard__info-line">515-905-615 (84+) :let</p>
             </div>
-            <div class="send">WYŚLIJ</div>
+            <div class="postcard__send">WYŚLIJ</div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section id="about" class="about module">
         <h1 class="about__header">O nas</h1>

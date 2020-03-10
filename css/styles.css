@@ -472,5 +472,125 @@
     text-align: left;
   }
 }
+.contact {
+  padding: 5em 0;
+  margin: 0 5em;
+  height: 100vh;
+}
+
+.contact__container {
+  width: 100%;
+  height: 70vh;
+  margin: 0 auto;
+  background-image: repeating-linear-gradient(135deg, #f29b91 0px, #f09290 30px, transparent 30px, transparent 50px, #83b3db 50px, #84adcb 80px, transparent 80px, transparent 100px);
+  padding: 12px;
+}
+
+.postcard {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.postcard__title {
+  grid-column: 2/span 7;
+  grid-row: 3/span 1;
+  border: 2px solid #000;
+}
+
+.postcard__body {
+  grid-column: 2/span 7;
+  grid-row: 5/span 6;
+  border: 2px solid #000;
+}
+
+.postcard__title,
+.postcard__title:placeholder-shown,
+.postcard__body,
+.postcard__body:placeholder-shown {
+  padding-left: 10px;
+}
+
+.postcard__body {
+  padding-top: 10px;
+}
+
+.postcard__link {
+  grid-column: 10/span 4;
+  grid-row: 3/span 4;
+}
+
+.postcard__foto {
+  border-radius: 10%;
+}
+
+.postcard__info {
+  grid-column: 10/span 4;
+  grid-row: 9/span 3;
+}
+
+.postcard__info-line {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: left;
+}
+
+.postcard__send {
+  grid-column: 10/span 2;
+  grid-row: 11/span 1;
+  width: 160px;
+  height: 60px;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1150px) {
+  .postcard__title {
+    grid-column: 2/span 10;
+  }
+
+  .postcard__body {
+    grid-column: 2/span 10;
+  }
+
+  .postcard__link {
+    display: none;
+  }
+
+  .postcard__info {
+    display: none;
+  }
+
+  .postcard__send {
+    grid-column: 9/span 1;
+    grid-row: 11/span 2;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .postcard__title {
+    grid-column: 2/span 10;
+    grid-row: 2/span 1;
+  }
+
+  .postcard__body {
+    grid-column: 2/span 10;
+    grid-row: 4/span 7;
+  }
+
+  .postcard .send {
+    grid-column: 9/span 1;
+    grid-row: 12/span 1;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contact {
+    margin: 0;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
