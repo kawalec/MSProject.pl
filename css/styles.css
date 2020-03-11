@@ -126,7 +126,7 @@
   }
 }
 .welcome {
-  background: url("../images/Puzle.jpg") center center no-repeat;
+  background: url("../images/puzle.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -207,13 +207,13 @@
   background-repeat: no-repeat;
 }
 .module__img--ms-project {
-  background-image: url(../images/MSProject.png);
+  background-image: url(../images/msproject.png);
 }
 .module__img--project-management {
-  background-image: url(../images/PM.png);
+  background-image: url(../images/pm.png);
 }
 .module__img--ms-excel {
-  background-image: url(../images/MSExcel.png);
+  background-image: url(../images/msexcel.png);
 }
 .module__boxes {
   display: flex;
