@@ -632,7 +632,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 24em;
+  height: 100vh;
 }
 
 .numbers__block {
