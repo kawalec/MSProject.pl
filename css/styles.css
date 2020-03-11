@@ -50,6 +50,9 @@
 .menu__link:hover {
   color: #2c3e50;
 }
+.menu--active {
+  color: #f15225;
+}
 .menu__hamburger {
   display: none;
   outline: none;
@@ -191,6 +194,7 @@
 .module__header {
   font-size: 32px;
   margin-bottom: 15px;
+  color: #f15225;
 }
 .module__info {
   font-size: 22px;
@@ -301,6 +305,7 @@
   font-size: 32px;
   grid-column: 5/span 1;
   grid-row: 5/span 1;
+  color: #f15225;
 }
 .consulting__info {
   text-align: justify;
@@ -383,6 +388,7 @@
   grid-column: 2/span 4;
   grid-row: 1/span 1;
   align-self: end;
+  color: #f15225;
 }
 .about__info {
   text-align: justify;
