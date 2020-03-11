@@ -227,7 +227,7 @@ $color_link: #0080ff
   color: #000
   display: flex
   flex-direction: column
-  width: 18em
+  width: 22em
   padding: 1em 0.5em
   margin: 1em
   text-align: center
@@ -238,7 +238,7 @@ $color_link: #0080ff
     flex-grow: 1
 
   &__info
-    font-size: 14px
+    // font-size: 14px
     flex-grow: 3
     margin: 20px 0
 
@@ -523,11 +523,6 @@ $color_link: #0080ff
   grid-column: 10 / span 4
   grid-row: 9 / span 3
 
-// .postcard__info-line
-//   direction: rtl
-//   unicode-bidi: bidi-override
-//   text-align: left
-
 .postcard__send
   grid-column: 10 / span 2
   grid-row: 11 / span 1
@@ -579,7 +574,7 @@ $color_link: #0080ff
   flex-direction: row
   justify-content: space-around
   margin-bottom: 20px
-  // max-height: 200px
+  font-size: 1.2em
 
   &__info-header, &__company-header
     padding: 1em 0
@@ -588,7 +583,12 @@ $color_link: #0080ff
     width: 30%
 
   &__info-line
-    font-size: 20px
+    font-size: 1.2em
+
+  &__info-link
+    font-size: 1.1em
+    color: $color_5
+    text-decoration: none
 
 .opc_add
   opacity: 0
@@ -602,7 +602,6 @@ $color_link: #0080ff
   .footer
     flex-direction: column
     align-items: center
-    // max-height: 400px
 
     &__info, &__company
       width: 80%
@@ -615,19 +614,19 @@ $color_link: #0080ff
   flex-direction: row
   align-items: center
   justify-content: space-around
-  height: 100vh
+  height: 24em
 
-.numbers__block
-  text-align: center
+  &__block
+    text-align: center
 
-.numbers__header
-  text-align: center
-  font-size: 4em
-  font-weight: 900
+  &__header
+    text-align: center
+    font-size: 4em
+    font-weight: 900
 
-.numbers__text
-  padding-top: 0.5em
-  font-size: 2em
+  &__text
+    padding-top: 0.5em
+    font-size: 2em
 
 
 @media only screen and (max-width: 650px)

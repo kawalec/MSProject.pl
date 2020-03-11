@@ -224,7 +224,7 @@
   color: #000;
   display: flex;
   flex-direction: column;
-  width: 18em;
+  width: 22em;
   padding: 1em 0.5em;
   margin: 1em;
   text-align: center;
@@ -235,7 +235,6 @@
   flex-grow: 1;
 }
 .box__info {
-  font-size: 14px;
   flex-grow: 3;
   margin: 20px 0;
 }
@@ -596,6 +595,7 @@
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 20px;
+  font-size: 1.2em;
 }
 .footer__info-header, .footer__company-header {
   padding: 1em 0;
@@ -604,7 +604,12 @@
   width: 30%;
 }
 .footer__info-line {
-  font-size: 20px;
+  font-size: 1.2em;
+}
+.footer__info-link {
+  font-size: 1.1em;
+  color: #2980b9;
+  text-decoration: none;
 }
 
 .opc_add {
@@ -632,19 +637,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  height: 24em;
 }
-
 .numbers__block {
   text-align: center;
 }
-
 .numbers__header {
   text-align: center;
   font-size: 4em;
   font-weight: 900;
 }
-
 .numbers__text {
   padding-top: 0.5em;
   font-size: 2em;
