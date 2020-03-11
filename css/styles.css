@@ -626,5 +626,38 @@
     width: 80%;
   }
 }
+.numbers {
+  background: url(../images/puzle.jpg) center center/100% auto no-repeat fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 24em;
+}
+
+.numbers__block {
+  text-align: center;
+}
+
+.numbers__header {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.numbers__text {
+  padding-top: 0.5em;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 650px) {
+  .numbers__header {
+    font-size: 2em;
+  }
+
+  .numbers__text {
+    font-size: 1em;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
