@@ -498,75 +498,103 @@ $color_link: #0080ff
   grid-template-columns: repeat(12, 1fr)
   grid-template-rows: repeat(12, 1fr)
 
-.postcard__title
-  grid-column: 2 / span 7
-  grid-row: 3 / span 1
-  border: 2px solid #000
+  &__title
+    grid-column: 2 / span 7
+    grid-row: 3 / span 1
+    border: 2px solid #000
 
-.postcard__body
-  grid-column: 2 / span 7
-  grid-row: 5 / span 6
-  border: 2px solid #000
+  &__body
+    grid-column: 2 / span 7
+    grid-row: 5 / span 6
+    border: 2px solid #000
 
-.postcard__title,
-.postcard__title:placeholder-shown,
-.postcard__body,
-.postcard__body:placeholder-shown
-  padding-left: 10px
+  &__title,
+  &__title:placeholder-shown,
+  &__body,
+  &__body:placeholder-shown
+    padding-left: 10px
 
-.postcard__body
-  padding-top: 10px
+  &__body
+    padding-top: 10px
 
-.postcard__link
-  grid-column: 10 / span 4
-  grid-row: 3 / span 4
+  &__link
+    grid-column: 10 / span 4
+    grid-row: 3 / span 6
 
-.postcard__foto
-  border-radius: 10%
+  &__foto
+    border-radius: 10%
 
-.postcard__info
-  grid-column: 10 / span 4
-  grid-row: 9 / span 3
+  &__info
+    grid-column: 10 / span 4
+    grid-row: 9 / span 3
+    margin-left: 25px
 
-.postcard__send
-  grid-column: 10 / span 2
-  grid-row: 11 / span 1
-  width: 160px
-  height: 60px
-  font-size: 28px
-  font-weight: bold
-  padding: 10px 30px
-  cursor: pointer
+  &__send
+    grid-column: 10 / span 2
+    grid-row: 11 / span 1
+    font-size: 30px
+    font-weight: bold
+    cursor: pointer
+    justify-self: center
+
+@media only screen and (max-height: 950px)
+  
+  .postcard
+
+    &__link
+      transform: scale(0.7)
+      grid-column: 10 / span 4
+      grid-row: 2 / span 6
+
+@media only screen and (max-height: 650px)
+  
+  .postcard
+
+    &__link
+      display: none
+
+    &__info
+      grid-column: 10 / span 4
+      grid-row: 5 / span 3
+    
+    &__info-line
+      font-size: 18px
 
 @media only screen and (max-width: 1150px)
-  .postcard__title
-    grid-column: 2 / span 10
 
-  .postcard__body
-    grid-column: 2 / span 10
+  .postcard
 
-  .postcard__link
-    display: none
+    &__title
+      grid-column: 2 / span 10
 
-  .postcard__info
-    display: none
+    &__body
+      grid-column: 2 / span 10
 
-  .postcard__send
-    grid-column: 9 / span 1
-    grid-row: 11 / span 2
+    &__link
+      display: none
+
+    &__info
+      display: none
+
+    &__send
+      grid-column: 9 / span 1
+      grid-row: 12 / span 2
 
 @media only screen and (max-width: 650px)
-  .postcard__title
-    grid-column: 2 / span 10
-    grid-row: 2 / span 1
 
-  .postcard__body
-    grid-column: 2 / span 10
-    grid-row: 4 / span 7
+  .postcard
+    
+    &__title
+      grid-column: 2 / span 10
+      grid-row: 2 / span 1
 
-  .postcard .send
-    grid-column: 9 / span 1
-    grid-row: 12 / span 1
+    &__body
+      grid-column: 2 / span 10
+      grid-row: 4 / span 7
+
+    &__send
+      grid-column: 9 / span 1
+      grid-row: 12 / span 1
 
 @media only screen and (max-width: 400px)
   .contact
