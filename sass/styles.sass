@@ -106,7 +106,7 @@ $color_link: #0080ff
   .menu__link
     font-size: 0.8em
 
-@media only screen and (max-width: 680px)
+@media only screen and (max-width: 690px)
   .header__logo
     flex-grow: 1
 
@@ -129,6 +129,13 @@ $color_link: #0080ff
     &__hamburger
       display: block
 
+  @media only screen and (max-width: 400px)
+    .header__logo
+      display: none
+
+    .menu
+      width: 100%
+  
 
     //  WELCOME
 
@@ -196,6 +203,7 @@ $color_link: #0080ff
   &__header
     font-size: 32px
     margin-bottom: 15px
+    margin-top: 15px
     color: $color_h1
 
   &__info
@@ -216,7 +224,6 @@ $color_link: #0080ff
 
     &--ms-excel
       background-image: url(../images/msexcel.png)
-
 
   &__boxes
     display: flex
@@ -277,15 +284,11 @@ $color_link: #0080ff
       text-align: left
       font-size: 16px
 
-    &__header
-      margin-bottom: 40px
-
     &__info
       display: none
 
   .box
     margin: 1em 0
-    height: 8em
 
       //  CONSULTING
 .consulting
@@ -637,6 +640,11 @@ $color_link: #0080ff
 
     &__info, &__company
       width: 80%
+
+@media only screen and (max-width: 600px)
+  .footer__company
+    display: none
+
 
 // SECTION
 
