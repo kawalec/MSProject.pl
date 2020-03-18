@@ -75,6 +75,7 @@ $color_link: #0080ff
     position: relative
     background: transparent
     transition: 0.3s transform ease
+    display: none
 
     &::before,
     &::after
@@ -90,11 +91,11 @@ $color_link: #0080ff
       transform: translateY(25px)
       transition: 0.1s transform ease
 
-    &:focus
+    &--active
       transform: rotate(45deg) translateY(5px)
       border: none
 
-    &:focus::after
+    &--active::after
       transform: rotate(-90deg) translateX(-10px)
 
 @media only screen and (max-width: 1000px)
@@ -105,7 +106,7 @@ $color_link: #0080ff
   .menu__link
     font-size: 0.8em
 
-@media only screen and (max-width: 650px)
+@media only screen and (max-width: 680px)
   .header__logo
     flex-grow: 1
 
@@ -114,10 +115,13 @@ $color_link: #0080ff
   
     &__list
       flex-direction: column
-      display: flex
+      display: none
       justify-content: center
       align-items: center
-      width: 70%
+      width: 100%
+
+      &--active
+        display: flex
 
     &__link
       font-size: 1em
@@ -125,11 +129,6 @@ $color_link: #0080ff
     &__hamburger
       display: block
 
-      & + ul
-        display: none
-
-      &:focus + ul
-        display: block
 
     //  WELCOME
 
